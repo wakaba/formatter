@@ -14,35 +14,34 @@ Test {
   });
 } n => 1, name => 'GET is not allowed';
 
-Test {
-  my ($c, $client) = @{$_[0]};
-  return $client->request (
-    path => ['hatena'],
-    method => 'POST',
-    body => "anvc def",
-  )->then (sub {
-    my $res = $_[0];
-    test {
-      is $res->status, 200;
-      is $res->body_bytes, "anvc def";
-    } $c;
-  });
-} n => 2, name => 'converted';
-
-Test {
-  my ($c, $client) = @{$_[0]};
-  return $client->request (
-    path => ['hatena'],
-    method => 'POST',
-    body => "",
-  )->then (sub {
-    my $res = $_[0];
-    test {
-      is $res->status, 200;
-      is $res->body_bytes, "";
-    } $c;
-  });
-} n => 2, name => 'converted empty';
+for (
+  ["", ""],
+  ["anvc def", "<p>anvc def</p>\n"],
+  ["http://bad.foo.test/aa", qq{<p><a href="http://bad.foo.test/aa">http://bad.foo.test/aa</a></p>\n}],
+  ["[http://bad.foo.test/aa:title]", qq{<p><a href="http://bad.foo.test/aa">http://bad.foo.test/aa</a></p>\n}],
+  ["[https://aba.test/aew43aat33333:embed]", qq{<p><a href="https://aba.test/aew43aat33333">https://aba.test/aew43aat33333</a></p>\n}],
+  ["[https://twitter.com/bukkenfan/status/836562615081947136:embed]", qq{<p><a href="https://twitter.com/bukkenfan/status/836562615081947136">https://twitter.com/bukkenfan/status/836562615081947136</a></p>\n}],
+  [qq{>|js|
+function abc () { return x }
+||<}, qq{<pre class="code">function abc () { return x }</pre>}],
+) {
+  my ($input, $expected, %args) = @$_;
+  Test {
+    my ($c, $client) = @{$_[0]};
+    return $client->request (
+      path => ['hatena'],
+      method => 'POST',
+      body => $input,
+      params => \%args,
+    )->then (sub {
+      my $res = $_[0];
+      test {
+        is $res->status, 200;
+        is $res->body_bytes, $expected;
+      } $c;
+    });
+  } n => 2, name => 'converted';
+}
 
 RUN;
 

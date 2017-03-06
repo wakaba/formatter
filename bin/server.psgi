@@ -3,6 +3,28 @@ use strict;
 use warnings;
 use Wanage::HTTP;
 use Warabe::App;
+use Text::Hatena;
+
+{
+  package TheUserAgent;
+
+  sub get ($$) {
+    my ($self, $url) = @_;
+    return bless {url => $url}, 'TheResponse';
+  } # get
+
+  package TheResponse;
+  use Web::Encoding;
+
+  sub content ($) {
+    return encode_web_utf8 sprintf "<title>%s</title>", $_[0]->{url};
+  } # content
+  *decoded_content = \&content;
+
+  use Text::Hatena::Embed;
+  no warnings 'redefine';
+  *Text::Hatena::Embed::render = sub { return undef };
+}
 
 return sub {
   my $http = Wanage::HTTP->new_from_psgi_env ($_[0]);
@@ -23,7 +45,10 @@ return sub {
       return $app->throw_error (405)
           unless $app->http->request_method eq 'POST';
       my $input_ref = $app->http->request_body_as_ref;
-      $app->http->send_response_body_as_text ($$input_ref);
+      my $parser = Text::Hatena->new
+          (use_vim => 0,
+           ua => bless {}, 'TheUserAgent');
+      $app->http->send_response_body_as_text ($parser->parse ($$input_ref));
       return $app->http->close_response_body;
     } else {
       return $app->throw_error (404);
