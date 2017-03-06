@@ -47,8 +47,10 @@ return sub {
     if (@$path == 1 and $path->[0] eq 'hatena') {
       return $app->throw_error (405)
           unless $app->http->request_method eq 'POST';
+      my $origin = $app->http->get_request_header ('origin') // '';
       return $app->throw_error (400, reason_phrase => 'Bad origin')
-          unless $ClientOrigins->{$app->http->get_request_header ('origin') // ''};
+          unless length $origin and $ClientOrigins->{$origin};
+      $app->http->set_response_header ('access-control-allow-origin' => $origin);
       my $input_ref = $app->http->request_body_as_ref;
       my $parser = Text::Hatena->new
           (use_vim => 0,

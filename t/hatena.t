@@ -40,10 +40,11 @@ function abc () { return x }
       my $res = $_[0];
       test {
         is $res->status, 200;
+        is $res->header ('access-control-allow-origin'), 'https://pass1.test';
         is $res->body_bytes, $expected;
       } $c;
     });
-  } n => 2, name => 'converted';
+  } n => 3, name => 'converted';
 }
 
 Test {
