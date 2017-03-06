@@ -24,6 +24,8 @@ for (
   [qq{>|js|
 function abc () { return x }
 ||<}, qq{<pre class="code">function abc () { return x }</pre>}],
+  [qq{id:foo}, qq{<p><a href="https://foo/bar/foo/">id:foo</a></p>\n}, urlbase => q<https://foo/bar/>],
+  [qq{[[foo]]}, qq{<p><a href="http://d.hatena.ne.jp/keyword/foo">foo</a></p>\n}],
 ) {
   my ($input, $expected, %args) = @$_;
   Test {
