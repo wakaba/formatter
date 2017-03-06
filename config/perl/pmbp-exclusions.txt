@@ -1,4 +1,4 @@
-
+- Text::VimColor
 - "../../modules/web-resource" build tests
 - "../../modules/promise" build tests
 - "../../modules/web-url" build tests

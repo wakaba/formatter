@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use Wanage::HTTP;
 use Warabe::App;
+BEGIN { $INC{"Text/VimColor.pm"} = 1 }
 use Text::Hatena;
 
 my $ClientOrigins = {map { $_ => 1 } split /\s+/, $ENV{APP_CLIENT_ORIGINS} // ''};

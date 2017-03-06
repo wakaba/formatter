@@ -101,7 +101,6 @@ Test::TCP~2.17
 Test::Warn~0.32
 Text::Diff~1.44
 Text::MicroTemplate~0.24
-Text::VimColor~0.26
 Time::HiRes~1.9741
 Time::Local~1.25
 Try::Tiny~0.28
