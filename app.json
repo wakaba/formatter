@@ -1,0 +1,12 @@
+{
+  "name": "formatter",
+  "website": "https://github.com/wakaba/formatter",
+  "buildpacks": [
+    {"url": "https://github.com/wakaba/heroku-buildpack-perl-pmbp"}
+  ],
+  "env": {
+    "APP_CLIENT_ORIGINS": {
+      "description": "Allowed client origins (space-separated)"
+    }
+  }
+}
