@@ -52,6 +52,7 @@ return sub {
       my $input_ref = $app->http->request_body_as_ref;
       my $parser = Text::Hatena->new
           (use_vim => 0,
+           urlbase => $app->text_param ('urlbase'),
            ua => bless {}, 'TheUserAgent');
       $app->http->send_response_body_as_text ($parser->parse ($$input_ref));
       return $app->http->close_response_body;
