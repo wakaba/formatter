@@ -12,7 +12,6 @@ Canary::Stability~2012
 Capture::Tiny~0.46
 Carp~1.38
 Class::Accessor~0.34
-Class::Accessor::Fast~0.34
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.31
@@ -58,7 +57,6 @@ HTTP::Message~6.11
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.01
 HTTP::Negotiate~6.01
-HTTP::Status~6.11
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -68,7 +66,6 @@ IO::Socket::IP~0.38
 JSON::MaybeXS~1.003009
 JSON::PP~2.27400
 JSON::XS~3.03
-LWP~6.22
 LWP::MediaTypes~6.02
 LWP::Protocol~6.22
 LWP::Protocol::PSGI~0.09
