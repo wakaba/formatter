@@ -50,6 +50,7 @@ sub web ($%) {
   }; # $stop
   my ($ready, $failed);
   my $p = Promise->new (sub { ($ready, $failed) = @_ });
+  $command->envs->{APP_CLIENT_ORIGINS} = 'https://pass1.test http://pass2.test';
   $command->run->then (sub {
     $command->wait->then (sub {
       $failed->($_[0]);

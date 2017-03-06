@@ -31,6 +31,7 @@ function abc () { return x }
     return $client->request (
       path => ['hatena'],
       method => 'POST',
+      headers => {origin => 'https://pass1.test'},
       body => $input,
       params => \%args,
     )->then (sub {
@@ -42,6 +43,35 @@ function abc () { return x }
     });
   } n => 2, name => 'converted';
 }
+
+Test {
+  my ($c, $client) = @{$_[0]};
+  return $client->request (
+    path => ['hatena'],
+    method => 'POST',
+    headers => {origin => 'https://bad1.test'},
+    body => rand,
+  )->then (sub {
+    my $res = $_[0];
+    test {
+      is $res->status, 400;
+    } $c;
+  });
+} n => 1, name => 'bad origin';
+
+Test {
+  my ($c, $client) = @{$_[0]};
+  return $client->request (
+    path => ['hatena'],
+    method => 'POST',
+    body => rand,
+  )->then (sub {
+    my $res = $_[0];
+    test {
+      is $res->status, 400;
+    } $c;
+  });
+} n => 1, name => 'no origin';
 
 RUN;
 
