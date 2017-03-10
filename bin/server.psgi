@@ -4,6 +4,7 @@ use warnings;
 use Wanage::HTTP;
 use Warabe::App;
 BEGIN { $INC{"Text/VimColor.pm"} = 1 }
+use Web::Encoding;
 use Text::Hatena;
 
 my $ClientOrigins = {map { $_ => 1 } split /\s+/, $ENV{APP_CLIENT_ORIGINS} // ''};
@@ -56,7 +57,7 @@ return sub {
           (use_vim => 0,
            urlbase => $app->text_param ('urlbase'),
            ua => bless {}, 'TheUserAgent');
-      $app->http->send_response_body_as_text ($parser->parse ($$input_ref));
+      $app->http->send_response_body_as_text ($parser->parse (decode_web_utf8 $$input_ref));
       return $app->http->close_response_body;
     } else {
       return $app->throw_error (404);

@@ -43,7 +43,13 @@ sub Test (&;%) {
       undef $c;
     } promised_cleanup {
       return $client->close;
-    } Promise->resolve ([$c, $client])->then ($code);
+    } Promise->resolve ([$c, $client])->then ($code)->catch (sub {
+      my $error = $_[0];
+      test {
+        ok 0;
+        is $error, undef;
+      } $c;
+    });
   }, @_);
 } # Test
 
