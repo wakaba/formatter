@@ -3,6 +3,7 @@ use warnings;
 use Path::Tiny;
 use lib glob path (__FILE__)->parent->parent->child ('t_deps/lib');
 use Tests;
+use Web::Encoding;
 
 Test {
   my ($c, $client) = @{$_[0]};
@@ -26,6 +27,7 @@ function abc () { return x }
 ||<}, qq{<pre class="code">function abc () { return x }</pre>}],
   [qq{id:foo}, qq{<p><a href="https://foo/bar/foo/">id:foo</a></p>\n}, urlbase => q<https://foo/bar/>],
   [qq{[[foo]]}, qq{<p><a href="http://d.hatena.ne.jp/keyword/foo">foo</a></p>\n}],
+  [qq{\x{42444}}, qq{<p>\x{42444}</p>\n}],
 ) {
   my ($input, $expected, %args) = @$_;
   Test {
@@ -34,17 +36,17 @@ function abc () { return x }
       path => ['hatena'],
       method => 'POST',
       headers => {origin => 'https://pass1.test'},
-      body => $input,
+      body => (encode_web_utf8 $input),
       params => \%args,
     )->then (sub {
       my $res = $_[0];
       test {
         is $res->status, 200;
         is $res->header ('access-control-allow-origin'), 'https://pass1.test';
-        is $res->body_bytes, $expected;
+        is decode_web_utf8 ($res->body_bytes), $expected;
       } $c;
     });
-  } n => 3, name => 'converted';
+  } n => 3, name => ['converted', $input];
 }
 
 Test {
