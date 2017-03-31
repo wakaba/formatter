@@ -3,6 +3,7 @@ Any::Moose~0.27
 AnyEvent~7.13
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.23
+AnyEvent::Socket
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -47,16 +48,18 @@ Filter::Util::Call~1.57
 Guard~1.023
 HTML::Element~5.03
 HTML::Entities~3.69
+HTML::Parser~3.72
 HTML::Tagset~3.20
 HTTP::Cookies~6.01
 HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.19
 HTTP::Headers::Fast~0.21
+HTTP::Message~6.11
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.01
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.11
+HTTP::Response~6.11
 HTTP::Status~6.11
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
@@ -82,6 +85,7 @@ Net::SSLeay~1.81
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.104
+Plack::Request~1.0043
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.37
 Scalar::Util~1.47
@@ -89,7 +93,9 @@ Socket~2.024
 Stream::Buffered~0.03
 Sub::Uplevel~0.2600
 TAP::Harness~3.38
+TAP::Harness::Env~3.38
 Term::ANSIColor~4.06
+Test::Builder~1.302078
 Test::Deep~1.126
 Test::Differences~0.64
 Test::Exception~0.43
@@ -116,7 +122,7 @@ Want~0.29
 Web::oEmbed~0.04
 XML::LibXML~2.0129
 XML::LibXML::Simple~0.97
-XML::NamespaceSupport~1.11
+XML::NamespaceSupport~1.12
 XML::SAX~0.99
-XML::SAX::Exception~1.08
+XML::SAX::Base~1.08
 common::sense~3.74
