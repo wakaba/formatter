@@ -3,7 +3,7 @@ Any::Moose~0.27
 AnyEvent~7.13
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.23
-AnyEvent::Socket
+AnyEvent::Handle
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -59,8 +59,7 @@ HTTP::Message~6.11
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.01
 HTTP::Negotiate~6.01
-HTTP::Request~6.11
-HTTP::Response~6.11
+HTTP::Status~6.11
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -92,6 +91,7 @@ Socket~2.024
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 TAP::Harness~3.39
+TAP::Harness::Env~3.39
 Term::ANSIColor~4.06
 Test::Deep~1.126
 Test::Differences~0.64
@@ -121,5 +121,5 @@ XML::LibXML~2.0129
 XML::LibXML::Simple~0.97
 XML::NamespaceSupport~1.12
 XML::SAX~0.99
-XML::SAX::Exception~1.09
+XML::SAX::Base~1.09
 common::sense~3.74
