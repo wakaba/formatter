@@ -12,7 +12,6 @@ Canary::Stability~2012
 Capture::Tiny~0.46
 Carp~1.38
 Class::Accessor~0.34
-Class::Accessor::Fast~0.34
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.31
@@ -48,19 +47,18 @@ Filter::Util::Call~1.57
 Guard~1.023
 HTML::Element~5.03
 HTML::Entities~3.69
-HTML::HeadParser~3.71
 HTML::Tagset~3.20
 HTTP::Cookies~6.03
 HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.19
 HTTP::Headers::Fast~0.21
-HTTP::Message~6.11
+HTTP::Headers::Util~6.11
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
 HTTP::Request~6.11
-HTTP::Response~6.11
+HTTP::Status~6.11
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -72,6 +70,7 @@ JSON::PP~2.27400
 JSON::XS~3.03
 LWP~6.26
 LWP::MediaTypes~6.02
+LWP::Protocol~6.26
 LWP::Protocol::PSGI~0.09
 LWP::UserAgent~6.26
 List::MoreUtils~0.419
@@ -85,7 +84,6 @@ Net::SSLeay~1.81
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.104
-Plack::Request~1.0043
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.37
 Scalar::Util~1.47
@@ -93,13 +91,14 @@ Socket~2.024
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 TAP::Harness~3.39
+TAP::Harness::Env~3.39
 Term::ANSIColor~4.06
 Test::Deep~1.126
 Test::Differences~0.64
 Test::Exception~0.43
 Test::Fatal~0.014
 Test::Harness~3.39
-Test::More~1.302078
+Test::More~1.302083
 Test::Most~0.35
 Test::Name::FromLine~0.13
 Test::Pod~1.51
@@ -114,6 +113,7 @@ Try::Tiny~0.28
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.71
+URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
@@ -122,5 +122,5 @@ XML::LibXML~2.0129
 XML::LibXML::Simple~0.97
 XML::NamespaceSupport~1.12
 XML::SAX~0.99
-XML::SAX::Base~1.09
+XML::SAX::Exception~1.09
 common::sense~3.74
