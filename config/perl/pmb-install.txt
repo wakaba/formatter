@@ -83,6 +83,7 @@ Net::SSLeay~1.81
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.104
+Plack::Request~1.0044
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.37
 Scalar::Util~1.47
@@ -112,7 +113,6 @@ Try::Tiny~0.28
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.71
-URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
