@@ -3,32 +3,10 @@ use strict;
 use warnings;
 use Wanage::HTTP;
 use Warabe::App;
-BEGIN { $INC{"Text/VimColor.pm"} = 1 }
 use Web::Encoding;
 use Text::Hatena;
 
 my $ClientOrigins = {map { $_ => 1 } split /\s+/, $ENV{APP_CLIENT_ORIGINS} // ''};
-
-{
-  package TheUserAgent;
-
-  sub get ($$) {
-    my ($self, $url) = @_;
-    return bless {url => $url}, 'TheResponse';
-  } # get
-
-  package TheResponse;
-  use Web::Encoding;
-
-  sub content ($) {
-    return encode_web_utf8 sprintf "<title>%s</title>", $_[0]->{url};
-  } # content
-  *decoded_content = \&content;
-
-  use Text::Hatena::Embed;
-  no warnings 'redefine';
-  *Text::Hatena::Embed::render = sub { return undef };
-}
 
 return sub {
   my $http = Wanage::HTTP->new_from_psgi_env ($_[0]);
@@ -54,9 +32,15 @@ return sub {
       $app->http->set_response_header ('access-control-allow-origin' => $origin);
       my $input_ref = $app->http->request_body_as_ref;
       my $parser = Text::Hatena->new
-          (use_vim => 0,
+          (amazonid => $app->text_param ('amazonid'),
+           expand_map => 0,
+           expand_movie => 0,
+           keyword_url_prefix => $app->text_param ('keyword_url_prefix'),
            urlbase => $app->text_param ('urlbase'),
-           ua => bless {}, 'TheUserAgent');
+           ua => undef,
+           use_hatena_bookmark_detail => 0,
+           use_google_chart => 0,
+           use_vim => 0);
       $app->http->send_response_body_as_text ($parser->parse (decode_web_utf8 $$input_ref));
       return $app->http->close_response_body;
     } else {

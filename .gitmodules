@@ -36,7 +36,7 @@
 	track = master
 [submodule "modules/Text-Hatena"]
 	path = modules/Text-Hatena
-	url = https://github.com/onishi/Text-Hatena
+	url = https://github.com/wakaba/Text-Hatena
 	track = master
 [submodule "modules/promised-command"]
 	path = modules/promised-command
