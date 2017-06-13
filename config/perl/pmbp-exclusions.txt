@@ -1,4 +1,8 @@
 - Text::VimColor
+- Web::oEmbed
+- Any::Moose
+- LWP::UserAgent
+- Cache::MemoryCache
 - "../../modules/web-resource" build tests
 - "../../modules/promise" build tests
 - "../../modules/web-url" build tests

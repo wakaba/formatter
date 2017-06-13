@@ -19,15 +19,26 @@ for (
   ["", ""],
   ["anvc def", "<p>anvc def</p>\n"],
   ["http://bad.foo.test/aa", qq{<p><a href="http://bad.foo.test/aa">http://bad.foo.test/aa</a></p>\n}],
-  ["[http://bad.foo.test/aa:title]", qq{<p><a href="http://bad.foo.test/aa">http://bad.foo.test/aa</a></p>\n}],
-  ["[https://aba.test/aew43aat33333:embed]", qq{<p><a href="https://aba.test/aew43aat33333">https://aba.test/aew43aat33333</a></p>\n}],
-  ["[https://twitter.com/bukkenfan/status/836562615081947136:embed]", qq{<p><a href="https://twitter.com/bukkenfan/status/836562615081947136">https://twitter.com/bukkenfan/status/836562615081947136</a></p>\n}],
+  ["[http://bad.foo.test/aa:title]", qq{<p><a href="http://bad.foo.test/aa" data-hatena-embed="title">http://bad.foo.test/aa</a></p>\n}],
+  ["[https://aba.test/aew43aat33333:embed]", qq{<p><a href="https://aba.test/aew43aat33333" data-hatena-embed="">https://aba.test/aew43aat33333</a></p>\n}],
+  ["[https://twitter.com/bukkenfan/status/836562615081947136:embed]", qq{<p><a href="https://twitter.com/bukkenfan/status/836562615081947136" data-hatena-embed="">https://twitter.com/bukkenfan/status/836562615081947136</a></p>\n}],
   [qq{>|js|
 function abc () { return x }
-||<}, qq{<pre class="code">function abc () { return x }</pre>}],
+||<}, qq{<pre class="code lang-js" data-lang="js">function abc () { return x }</pre>}],
+  [qq{id:foo}, qq{<p><a href="https://profile.hatena.ne.jp/foo/">id:foo</a></p>\n}],
   [qq{id:foo}, qq{<p><a href="https://foo/bar/foo/">id:foo</a></p>\n}, urlbase => q<https://foo/bar/>],
-  [qq{[[foo]]}, qq{<p><a href="http://d.hatena.ne.jp/keyword/foo">foo</a></p>\n}],
+  [qq{[[foo]]}, qq{<p><a href="https://d.hatena.ne.jp/keyword/foo" data-hatena-keyword="foo">foo</a></p>\n}],
+  [qq{[[foo]]}, qq{<p><a href="https://hoge.test/foo/bar/?a=foo" data-hatena-keyword="foo">foo</a></p>\n}, keyword_url_prefix => "https://hoge.test/foo/bar/?a="],
   [qq{\x{42444}}, qq{<p>\x{42444}</p>\n}],
+  [qq{[amazon:abc]}, q{<p><a href="https://www.amazon.co.jp/exec/obidos/external-search?mode=blended&tag=Xadz1&keyword=abc">amazon:abc</a></p>
+}, amazonid => "Xadz1"],
+  [q{map:31:52}, q{<p><hatena-map lat="31" lon="52"></hatena-map></p>
+}],
+  [q{http://www.nicovideo.jp/watch/sm9:movie}, '<p><a href="http://www.nicovideo.jp/watch/sm9" data-hatena-embed="movie">http://www.nicovideo.jp/watch/sm9</a></p>
+'],
+  [q{https://foo.bar/test:detail}, qq{<p><a href="https://foo.bar/test" data-hatena-embed="httpdetail">https://foo.bar/test</a></p>\n}],
+  [q{https://foo.bar/test:barcode}, qq{<p><a href="https://foo.bar/test" class="http-barcode" data-hatena-embed="barcode">https://foo.bar/test</a></p>\n}],
+  [q{[tex:a^b + c < 1]}, qq{<p><hatena-tex>a^b + c &lt; 1</hatena-tex></p>\n}],
 ) {
   my ($input, $expected, %args) = @$_;
   Test {
