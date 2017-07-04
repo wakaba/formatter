@@ -2,7 +2,6 @@ Algorithm::Diff~1.1903
 AnyEvent~7.14
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.23
-AnyEvent::Handle
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -10,6 +9,7 @@ Canary::Stability~2012
 Capture::Tiny~0.46
 Carp~1.38
 Class::Accessor~0.34
+Class::Accessor::Fast~0.34
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.31
@@ -48,8 +48,8 @@ HTTP::Message~6.13
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Server::PSGI
-HTTP::Status~6.13
+HTTP::Request~6.13
+HTTP::Request::Common~6.13
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -59,6 +59,7 @@ IO::Socket::IP~0.39
 JSON::MaybeXS~1.003009
 JSON::PP~2.94
 JSON::XS~3.03
+LWP~6.26
 LWP::MediaTypes~6.02
 LWP::Protocol~6.26
 LWP::Protocol::PSGI~0.10
@@ -70,6 +71,7 @@ Net::SSLeay~1.81
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.104
+Plack::Request~1.0044
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.48
@@ -96,7 +98,6 @@ Try::Tiny~0.28
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.71
-URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
