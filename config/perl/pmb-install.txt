@@ -44,10 +44,12 @@ HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.20
 HTTP::Headers::Fast~0.21
+HTTP::Message~6.13
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Response~6.13
+HTTP::Request~6.13
+HTTP::Server::PSGI
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -57,6 +59,7 @@ IO::Socket::IP~0.39
 JSON::MaybeXS~1.003009
 JSON::PP~2.94
 JSON::XS~3.03
+LWP~6.26
 LWP::MediaTypes~6.02
 LWP::Protocol~6.26
 LWP::Protocol::PSGI~0.10
