@@ -9,10 +9,9 @@ Canary::Stability~2012
 Capture::Tiny~0.46
 Carp~1.38
 Class::Accessor~0.34
-Class::Accessor::Fast~0.34
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
-Class::Inspector~1.31
+Class::Inspector~1.32
 Cookie::Baker~0.08
 Cpanel::JSON::XS~3.0237
 Cwd~3.62
@@ -36,19 +35,19 @@ File::Temp~0.2304
 Filesys::Notify::Simple~0.12
 Filter::Util::Call~1.57
 Guard~1.023
-HTML::Entities~3.69
 HTML::HeadParser~3.71
+HTML::Parser~3.72
 HTML::Tagset~3.20
 HTTP::Cookies~6.04
 HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.20
+HTTP::Headers~6.13
 HTTP::Headers::Fast~0.21
 HTTP::Message~6.13
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.13
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -60,6 +59,7 @@ JSON::PP~2.94
 JSON::XS~3.03
 LWP~6.26
 LWP::MediaTypes~6.02
+LWP::Protocol~6.26
 LWP::Protocol::PSGI~0.10
 List::MoreUtils~0.419
 MIME::Base64~3.15
@@ -69,7 +69,6 @@ Net::SSLeay~1.81
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.104
-Plack::Request~1.0044
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.48
@@ -96,6 +95,7 @@ Try::Tiny~0.28
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.72
+URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
