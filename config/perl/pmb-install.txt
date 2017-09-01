@@ -47,7 +47,8 @@ HTTP::Message~6.13
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request~6.13
+HTTP::Request::Common~6.13
+HTTP::Server::PSGI
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -59,12 +60,11 @@ JSON::PP~2.94
 JSON::XS~3.04
 LWP~6.26
 LWP::MediaTypes~6.02
-LWP::Protocol~6.26
 LWP::Protocol::PSGI~0.10
 List::MoreUtils~0.423
 MIME::Base64~3.15
 Module::Build~0.4224
-Net::HTTP~6.16
+Net::HTTP~6.17
 Net::SSLeay~1.81
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
@@ -95,6 +95,7 @@ Try::Tiny~0.28
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.72
+URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
