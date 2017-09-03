@@ -5,7 +5,7 @@
 [submodule "modules/web-resource"]
 	path = modules/web-resource
 	url = https://github.com/manakai/perl-web-resource
-	track = master
+	track = transport
 [submodule "modules/promise"]
 	path = modules/promise
 	url = https://github.com/wakaba/perl-promise
@@ -42,3 +42,6 @@
 	path = modules/promised-command
 	url = https://github.com/wakaba/perl-promised-command
 	track = master
+[submodule "modules/streams"]
+	path = modules/streams
+	url = https://github.com/manakai/perl-streams
