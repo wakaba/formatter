@@ -17,3 +17,5 @@
 - "../../modules/ooutils" build tests classdiamondgenerator classregistry objectcachesmethod operationresponse
 - "../../modules/json-functions-xs" build tests
 - "../../modules/promised-command" build tests
+
+- "../../modules/streams" build tests
