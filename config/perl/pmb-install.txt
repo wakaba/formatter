@@ -43,10 +43,10 @@ HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.20
 HTTP::Headers::Fast~0.21
+HTTP::Message~6.13
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request~6.13
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -57,7 +57,7 @@ JSON::MaybeXS~1.003009
 JSON::PP~2.94
 JSON::XS~3.04
 LWP::MediaTypes~6.02
-LWP::Protocol~6.27
+LWP::Protocol~6.29
 LWP::Protocol::PSGI~0.10
 List::MoreUtils~0.426
 List::MoreUtils::XS~0.426
@@ -68,6 +68,7 @@ Net::SSLeay~1.82
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.104
+Plack::Request~1.0044
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.49
