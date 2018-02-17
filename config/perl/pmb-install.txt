@@ -75,6 +75,7 @@ Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 Term::ANSIColor~4.06
+Test::Builder~1.302122
 Test::Deep~1.127
 Test::Differences~0.64
 Test::Exception~0.43
@@ -94,6 +95,7 @@ Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.73
+URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
