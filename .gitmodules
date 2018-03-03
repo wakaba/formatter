@@ -45,3 +45,4 @@
 [submodule "modules/streams"]
 	path = modules/streams
 	url = https://github.com/manakai/perl-streams
+	track = master
