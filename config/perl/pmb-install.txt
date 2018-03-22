@@ -47,9 +47,7 @@ HTTP::Message~6.15
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.15
 HTTP::Server::PSGI
-HTTP::Status~6.15
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -59,8 +57,8 @@ IO::Socket::IP~0.39
 JSON::MaybeXS~1.003010
 JSON::PP~2.97001
 JSON::XS~3.04
+LWP~6.33
 LWP::MediaTypes~6.02
-LWP::Protocol~6.33
 LWP::Protocol::PSGI~0.10
 List::MoreUtils~0.428
 List::MoreUtils::XS~0.428
@@ -78,7 +76,6 @@ Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 Term::ANSIColor~4.06
-Test::Builder~1.302133
 Test::Deep~1.127
 Test::Differences~0.64
 Test::Exception~0.43
@@ -92,13 +89,12 @@ Test::TCP~2.19
 Test::Warn~0.32
 Text::Diff~1.45
 Text::MicroTemplate~0.24
-Time::HiRes~1.9757
+Time::HiRes~1.9758
 Time::Local~1.25
 Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.73
-URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
