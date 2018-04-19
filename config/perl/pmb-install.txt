@@ -2,7 +2,6 @@ Algorithm::Diff~1.1903
 AnyEvent~7.14
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.23
-AnyEvent::Handle
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -10,7 +9,6 @@ Canary::Stability~2012
 Capture::Tiny~0.46
 Carp~1.38
 Class::Accessor~0.51
-Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.32
@@ -43,7 +41,6 @@ HTTP::Cookies~6.04
 HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.21
-HTTP::Headers~6.16
 HTTP::Headers::Fast~0.21
 HTTP::Message~6.16
 HTTP::Message::PSGI
@@ -53,9 +50,9 @@ HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
 IO::HTML~1.001
-IO::Handle~1.28
+IO::Handle~1.39
 IO::Socket::IP~0.39
-JSON::MaybeXS~1.003010
+JSON::MaybeXS~1.004000
 JSON::PP~2.97001
 JSON::XS~3.04
 LWP::MediaTypes~6.02
@@ -77,13 +74,12 @@ Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 Term::ANSIColor~4.06
-Test::Builder~1.302135
-Test::Deep~1.127
+Test::Deep~1.128
 Test::Differences~0.64
 Test::Exception~0.43
 Test::Fatal~0.014
 Test::Harness~3.42
-Test::More~1.302135
+Test::More~1.302136
 Test::Most~0.35
 Test::Name::FromLine~0.13
 Test::SharedFork~0.35
