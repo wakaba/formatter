@@ -9,6 +9,7 @@ Canary::Stability~2012
 Capture::Tiny~0.48
 Carp~1.38
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.32
@@ -28,7 +29,7 @@ Exporter::Lite~0.08
 Exporter::Tiny~1.000000
 ExtUtils::Config~0.008
 ExtUtils::Helpers~0.026
-ExtUtils::InstallPaths~0.011
+ExtUtils::InstallPaths~0.012
 ExtUtils::MakeMaker~7.34
 File::Listing~6.04
 File::ShareDir~1.104
@@ -39,6 +40,7 @@ Filesys::Notify::Simple~0.13
 Filter::Util::Call~1.58
 Guard~1.023
 HTML::Entities~3.69
+HTML::Parser~3.72
 HTML::Tagset~3.20
 HTTP::Cookies~6.04
 HTTP::Daemon~6.01
@@ -49,7 +51,8 @@ HTTP::Message~6.16
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request~6.16
+HTTP::Server::PSGI
+HTTP::Status~6.16
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -59,20 +62,19 @@ IO::Socket::IP~0.39
 JSON::MaybeXS~1.004000
 JSON::PP~2.97001
 JSON::XS~3.04
+LWP~6.33
 LWP::MediaTypes~6.02
-LWP::Protocol~6.33
 LWP::Protocol::PSGI~0.10
 List::MoreUtils~0.428
 List::MoreUtils::XS~0.428
 MIME::Base64~3.15
 Module::Build~0.4224
 Module::Build::Tiny~0.039
-Net::HTTP~6.17
+Net::HTTP~6.18
 Net::SSLeay~1.85
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.104
-Plack::Request~1.0047
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.50
