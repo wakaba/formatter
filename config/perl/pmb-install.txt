@@ -2,6 +2,7 @@ Algorithm::Diff~1.1903
 AnyEvent~7.14
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.23
+AnyEvent::Handle
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -39,19 +40,19 @@ File::Temp~0.2304
 Filesys::Notify::Simple~0.13
 Filter::Util::Call~1.58
 Guard~1.023
+HTML::Entities~3.69
 HTML::HeadParser~3.71
 HTML::Tagset~3.20
 HTTP::Cookies~6.04
 HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.21
-HTTP::Headers~6.16
 HTTP::Headers::Fast~0.21
 HTTP::Message~6.16
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request~6.16
+HTTP::Status~6.16
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -61,6 +62,7 @@ IO::Socket::IP~0.39
 JSON::MaybeXS~1.004000
 JSON::PP~2.97001
 JSON::XS~3.04
+LWP~6.33
 LWP::MediaTypes~6.02
 LWP::Protocol~6.33
 LWP::Protocol::PSGI~0.10
@@ -80,6 +82,7 @@ Scalar::Util~1.50
 Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
+TAP::Harness~3.42
 TAP::Harness::Env~3.42
 Term::ANSIColor~4.06
 Test::Deep~1.128
