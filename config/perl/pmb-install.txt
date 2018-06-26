@@ -9,6 +9,7 @@ Canary::Stability~2012
 Capture::Tiny~0.48
 Carp~1.38
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.32
@@ -26,9 +27,6 @@ Exception::Class~1.44
 Exporter~5.72
 Exporter::Lite~0.08
 Exporter::Tiny~1.000000
-ExtUtils::Config~0.008
-ExtUtils::Helpers~0.026
-ExtUtils::InstallPaths~0.012
 ExtUtils::MakeMaker~7.34
 File::Listing~6.04
 File::ShareDir~1.116
@@ -40,7 +38,6 @@ Filter::Util::Call~1.58
 Guard~1.023
 HTML::Entities~3.69
 HTML::HeadParser~3.71
-HTML::Parser~3.72
 HTML::Tagset~3.20
 HTTP::Cookies~6.04
 HTTP::Daemon~6.01
@@ -51,8 +48,6 @@ HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Response~6.18
-HTTP::Server::PSGI
 HTTP::Tiny~0.070
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -64,13 +59,11 @@ JSON::PP~2.97001
 JSON::XS~3.04
 LWP~6.34
 LWP::MediaTypes~6.02
-LWP::Protocol~6.34
 LWP::Protocol::PSGI~0.10
 List::MoreUtils~0.428
 List::MoreUtils::XS~0.428
 MIME::Base64~3.15
 Module::Build~0.4224
-Module::Build::Tiny~0.039
 Net::HTTP~6.18
 Net::SSLeay~1.85
 POSIX::strftime::Compiler~0.42
@@ -82,7 +75,6 @@ Scalar::Util~1.50
 Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
-TAP::Harness::Env~3.42
 Term::ANSIColor~4.06
 Test::Builder~1.302136
 Test::Deep~1.128
@@ -103,7 +95,6 @@ Time::Local~1.28
 Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
-URI~1.74
 URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
