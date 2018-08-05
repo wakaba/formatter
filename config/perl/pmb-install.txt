@@ -40,7 +40,6 @@ Filesys::Notify::Simple~0.13
 Filter::Util::Call~1.59
 Guard~1.023
 HTML::Entities~3.69
-HTML::HeadParser~3.71
 HTML::Tagset~3.20
 HTTP::Cookies~6.04
 HTTP::Daemon~6.01
@@ -51,9 +50,7 @@ HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Response~6.18
-HTTP::Server::PSGI
-HTTP::Status~6.18
+HTTP::Request::Common~6.18
 HTTP::Tiny~0.074
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -76,6 +73,7 @@ Net::SSLeay~1.85
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.108
+Plack::Request~1.0047
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.50
