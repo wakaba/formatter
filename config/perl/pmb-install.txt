@@ -2,7 +2,6 @@ Algorithm::Diff~1.1903
 AnyEvent~7.14
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
-AnyEvent::Handle
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -10,6 +9,7 @@ Canary::Stability~2012
 Capture::Tiny~0.48
 Carp~1.38
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.32
@@ -39,7 +39,6 @@ File::Temp~0.2308
 Filesys::Notify::Simple~0.13
 Filter::Util::Call~1.59
 Guard~1.023
-HTML::Entities~3.69
 HTML::HeadParser~3.71
 HTML::Tagset~3.20
 HTTP::Cookies~6.04
@@ -51,6 +50,7 @@ HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
+HTTP::Request~6.18
 HTTP::Response~6.18
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
@@ -63,6 +63,7 @@ JSON::PP~2.97001
 JSON::XS~3.04
 LWP~6.35
 LWP::MediaTypes~6.02
+LWP::Protocol~6.35
 LWP::Protocol::PSGI~0.10
 List::MoreUtils~0.428
 List::MoreUtils::XS~0.428
@@ -74,12 +75,14 @@ Net::SSLeay~1.85
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.108
+Plack::Request~1.0047
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.50
 Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
+TAP::Harness~3.42
 TAP::Harness::Env~3.42
 Term::ANSIColor~4.06
 Test::Deep~1.128
@@ -101,7 +104,6 @@ Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.74
-URI::Escape~3.31
 WWW::Form::UrlEncoded~0.24
 WWW::RobotRules~6.02
 Want~0.29
