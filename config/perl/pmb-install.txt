@@ -2,7 +2,6 @@ Algorithm::Diff~1.1903
 AnyEvent~7.14
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
-AnyEvent::Handle
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -28,9 +27,6 @@ Exception::Class~1.44
 Exporter~5.72
 Exporter::Lite~0.08
 Exporter::Tiny~1.002001
-ExtUtils::Config~0.008
-ExtUtils::Helpers~0.026
-ExtUtils::InstallPaths~0.012
 ExtUtils::MakeMaker~7.34
 File::Listing~6.04
 File::ShareDir~1.116
@@ -41,7 +37,6 @@ Filesys::Notify::Simple~0.13
 Filter::Util::Call~1.59
 Guard~1.023
 HTML::Entities~3.69
-HTML::HeadParser~3.71
 HTML::Parser~3.72
 HTML::Tagset~3.20
 HTTP::Cookies~6.04
@@ -50,12 +45,10 @@ HTTP::Date~6.02
 HTTP::Entity::Parser~0.21
 HTTP::Headers::Fast~0.21
 HTTP::Headers::Util~6.18
-HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
 HTTP::Response~6.18
-HTTP::Server::PSGI
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -65,7 +58,6 @@ IO::Socket::IP~0.39
 JSON::MaybeXS~1.004000
 JSON::PP~2.97001
 JSON::XS~3.04
-LWP~6.35
 LWP::MediaTypes~6.02
 LWP::Protocol~6.35
 LWP::Protocol::PSGI~0.10
@@ -73,7 +65,6 @@ List::MoreUtils~0.428
 List::MoreUtils::XS~0.428
 MIME::Base64~3.15
 Module::Build~0.4224
-Module::Build::Tiny~0.039
 Net::HTTP~6.18
 Net::SSLeay~1.85
 POSIX::strftime::Compiler~0.42
@@ -85,9 +76,7 @@ Scalar::Util~1.50
 Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
-TAP::Harness::Env~3.42
 Term::ANSIColor~4.06
-Test::Builder~1.302140
 Test::Deep~1.128
 Test::Differences~0.64
 Test::Exception~0.43
