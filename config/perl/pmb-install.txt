@@ -9,7 +9,6 @@ Canary::Stability~2012
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
-Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.32
@@ -39,7 +38,6 @@ File::Temp~0.2308
 Filesys::Notify::Simple~0.13
 Filter::Util::Call~1.59
 Guard~1.023
-HTML::Entities~3.69
 HTML::HeadParser~3.71
 HTML::Parser~3.72
 HTML::Tagset~3.20
@@ -47,8 +45,8 @@ HTTP::Cookies~6.04
 HTTP::Daemon~6.01
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.21
-HTTP::Headers~6.18
 HTTP::Headers::Fast~0.21
+HTTP::Headers::Util~6.18
 HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
@@ -105,7 +103,6 @@ Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.74
-URI::Escape~3.31
 WWW::Form::UrlEncoded~0.25
 WWW::RobotRules~6.02
 Want~0.29
