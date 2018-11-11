@@ -2,7 +2,6 @@ Algorithm::Diff~1.1903
 AnyEvent~7.14
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
-AnyEvent::Handle
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -47,8 +46,7 @@ HTTP::Headers::Fast~0.21
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.18
-HTTP::Response~6.18
+HTTP::Request~6.18
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -77,6 +75,7 @@ Socket~2.027
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 Term::ANSIColor~4.06
+Test::Builder~1.302140
 Test::Deep~1.128
 Test::Differences~0.64
 Test::Exception~0.43
