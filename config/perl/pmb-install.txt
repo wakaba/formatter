@@ -10,6 +10,7 @@ Canary::Stability~2012
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.32
@@ -51,7 +52,6 @@ HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Response~6.18
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -74,15 +74,16 @@ Net::SSLeay~1.85
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.108
+Plack::Request~1.0047
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.50
 Socket~2.029
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
+TAP::Harness~3.42
 TAP::Harness::Env~3.42
 Term::ANSIColor~4.06
-Test::Builder~1.302162
 Test::Deep~1.128
 Test::Differences~0.67
 Test::Exception~0.43
@@ -102,7 +103,6 @@ Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.76
-URI::Escape~3.31
 WWW::Form::UrlEncoded~0.25
 WWW::RobotRules~6.02
 Want~0.29
