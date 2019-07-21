@@ -2,6 +2,7 @@ Algorithm::Diff~1.1903
 AnyEvent~7.16
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
+AnyEvent::Socket
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -9,7 +10,6 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
-Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.36
@@ -46,7 +46,8 @@ HTTP::Headers::Fast~0.22
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Status~6.18
+HTTP::Request::Common~6.18
+HTTP::Response~6.18
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -95,6 +96,7 @@ Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.76
+URI::Escape~3.31
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
