@@ -2,7 +2,7 @@ Algorithm::Diff~1.1903
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
-AnyEvent::Socket
+AnyEvent::Util
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -41,19 +41,17 @@ Filesys::Notify::Simple~0.13
 Filter::Util::Call~1.59
 Guard~1.023
 HTML::Entities~3.69
-HTML::Parser~3.72
 HTML::Tagset~3.20
 HTTP::Cookies~6.05
 HTTP::Daemon~6.06
 HTTP::Date~6.02
 HTTP::Entity::Parser~0.21
-HTTP::Headers~6.18
 HTTP::Headers::Fast~0.22
 HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Response~6.18
+HTTP::Request::Common~6.18
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -78,6 +76,7 @@ Net::SSLeay~1.88
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.108
+Plack::Request~1.0047
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.53
