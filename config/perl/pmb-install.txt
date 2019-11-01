@@ -2,6 +2,7 @@ Algorithm::Diff~1.1903
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
+AnyEvent::Util
 Apache::LogFormat::Compiler~0.35
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -51,7 +52,7 @@ HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
 HTTP::Request~6.18
-HTTP::Response~6.18
+HTTP::Request::Common~6.18
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -75,7 +76,6 @@ Net::SSLeay~1.88
 POSIX::strftime::Compiler~0.42
 Path::Class~0.37
 Path::Tiny~0.108
-Plack::Request~1.0047
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.53
@@ -84,6 +84,7 @@ Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 TAP::Harness::Env~3.42
 Term::ANSIColor~4.06
+Test::Builder~1.302168
 Test::Deep~1.128
 Test::Differences~0.67
 Test::Exception~0.43
