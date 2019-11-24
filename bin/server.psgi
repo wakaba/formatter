@@ -5,6 +5,7 @@ use Wanage::HTTP;
 use Warabe::App;
 use Web::Encoding;
 use Text::Hatena;
+use Web::URL::Parser;
 
 my $ClientOrigins = {map { $_ => 1 } split /\s+/, $ENV{APP_CLIENT_ORIGINS} // ''};
 
@@ -43,6 +44,17 @@ return sub {
            use_vim => 0);
       $app->http->send_response_body_as_text ($parser->parse (decode_web_utf8 $$input_ref));
       return $app->http->close_response_body;
+    } elsif (@$path == 1 and $path->[0] eq 'autolink') {
+      return $app->throw_error (405)
+          unless $app->http->request_method eq 'POST';
+      my $origin = $app->http->get_request_header ('origin') // '';
+      return $app->throw_error (400, reason_phrase => 'Bad origin')
+          unless length $origin and $ClientOrigins->{$origin};
+      $app->http->set_response_header ('access-control-allow-origin' => $origin);
+      my $input_ref = $app->http->request_body_as_ref;
+      my $parser = Web::URL::Parser->new;
+      $app->http->send_response_body_as_text ($parser->text_to_autolinked_html ($$input_ref));
+      return $app->http->close_response_body;
     } else {
       return $app->throw_error (404);
     }
@@ -51,7 +63,7 @@ return sub {
 
 =head1 LICENSE
 
-Copyright 2017 Wakaba <wakaba@suikawiki.org>.
+Copyright 2017-2019 Wakaba <wakaba@suikawiki.org>.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -64,6 +76,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 Affero General Public License for more details.
 
 You does not have received a copy of the GNU Affero General Public
-License along with this program, see <http://www.gnu.org/licenses/>.
+License along with this program, see <https://www.gnu.org/licenses/>.
 
 =cut
