@@ -50,8 +50,7 @@ HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.18
-HTTP::Server::PSGI
+HTTP::Response~6.18
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -83,7 +82,6 @@ Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 TAP::Harness::Env~3.42
 Term::ANSIColor~5.01
-Test::Builder~1.302171
 Test::Deep~1.128
 Test::Differences~0.67
 Test::Exception~0.43
