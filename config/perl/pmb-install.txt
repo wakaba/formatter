@@ -2,6 +2,7 @@ Algorithm::Diff~1.1903
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
+AnyEvent::Socket
 Apache::LogFormat::Compiler~0.36
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -9,6 +10,7 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.36
@@ -38,7 +40,6 @@ File::Temp~0.2309
 Filesys::Notify::Simple~0.14
 Filter::Util::Call~1.59
 Guard~1.023
-HTML::Entities~3.69
 HTML::HeadParser~3.71
 HTML::Parser~3.72
 HTML::Tagset~3.20
@@ -51,7 +52,7 @@ HTTP::Message~6.18
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.18
+HTTP::Request~6.18
 HTTP::Server::PSGI
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
@@ -79,7 +80,7 @@ Path::Class~0.37
 Path::Tiny~0.112
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
-Scalar::Util~1.53
+Scalar::Util~1.54
 Socket~2.029
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
@@ -105,6 +106,7 @@ Try::Tiny~0.30
 Types::Serialiser~1.0
 UNIVERSAL::require~0.18
 URI~1.76
+URI::Escape~3.31
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
