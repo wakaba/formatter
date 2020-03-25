@@ -2,6 +2,7 @@ Algorithm::Diff~1.1903
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.24
+AnyEvent::Handle
 Apache::LogFormat::Compiler~0.36
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -27,6 +28,9 @@ Exception::Class~1.44
 Exporter~5.74
 Exporter::Lite~0.08
 Exporter::Tiny~1.002001
+ExtUtils::Config~0.008
+ExtUtils::Helpers~0.026
+ExtUtils::InstallPaths~0.012
 ExtUtils::MakeMaker~7.44
 File::Listing~6.04
 File::ShareDir~1.116
@@ -44,11 +48,12 @@ HTTP::Daemon~6.06
 HTTP::Date~6.05
 HTTP::Entity::Parser~0.22
 HTTP::Headers::Fast~0.22
+HTTP::Headers::Util~6.22
 HTTP::Message~6.22
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Response~6.22
+HTTP::Status~6.22
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -66,6 +71,7 @@ List::MoreUtils::XS~0.428
 MIME::Base64~3.15
 Math::BigInt~1.999818
 Module::Build~0.4231
+Module::Build::Tiny~0.039
 Net::HTTP~6.19
 Net::SSLeay~1.88
 POSIX::strftime::Compiler~0.42
@@ -77,8 +83,8 @@ Scalar::Util~1.54
 Socket~2.029
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
+TAP::Harness::Env~3.42
 Term::ANSIColor~5.01
-Test::Builder~1.302172
 Test::Deep~1.130
 Test::Differences~0.67
 Test::Exception~0.43
@@ -87,6 +93,7 @@ Test::Harness~3.42
 Test::More~1.302172
 Test::Most~0.35
 Test::Name::FromLine~0.13
+Test::Needs~0.002006
 Test::SharedFork~0.35
 Test::TCP~2.22
 Test::Warn~0.36
