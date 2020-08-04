@@ -49,7 +49,7 @@ HTTP::Message~6.25
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Status~6.25
+HTTP::Request::Common~6.25
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.2
@@ -73,6 +73,7 @@ Net::SSLeay~1.88
 POSIX::strftime::Compiler~0.43
 Path::Class~0.37
 Path::Tiny~0.114
+Plack::Request~1.0047
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.55
