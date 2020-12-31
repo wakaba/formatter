@@ -1,8 +1,8 @@
-Algorithm::Diff~1.200
+Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.25
-AnyEvent::Util
+AnyEvent::Handle
 Apache::LogFormat::Compiler~0.36
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -22,7 +22,7 @@ Devel::StackTrace~2.04
 Devel::StackTrace::AsHTML~0.15
 Digest::SHA~6.02
 Digest::SHA1~2.13
-Encode~3.07
+Encode~3.08
 Encode::Locale~1.05
 Exception::Class~1.44
 Exporter~5.74
@@ -31,8 +31,8 @@ Exporter::Tiny~1.002002
 ExtUtils::Config~0.008
 ExtUtils::Helpers~0.026
 ExtUtils::InstallPaths~0.012
-ExtUtils::MakeMaker~7.56
-File::Listing~6.11
+ExtUtils::MakeMaker~7.58
+File::Listing~6.14
 File::ShareDir~1.118
 File::ShareDir::Install~0.13
 File::Slurp~9999.32
@@ -41,11 +41,13 @@ Filesys::Notify::Simple~0.14
 Filter::Util::Call~1.60
 Guard~1.023
 HTML::Entities~3.75
+HTML::HeadParser~3.75
 HTML::Tagset~3.20
 HTTP::Cookies~6.09
 HTTP::Daemon~6.12
 HTTP::Date~6.05
-HTTP::Entity::Parser~0.24
+HTTP::Entity::Parser~0.25
+HTTP::Headers~6.26
 HTTP::Headers::Fast~0.22
 HTTP::Message~6.26
 HTTP::Message::PSGI
@@ -62,7 +64,7 @@ JSON::MaybeXS~1.004003
 JSON::PP~4.05
 JSON::XS~4.03
 LWP::MediaTypes~6.04
-LWP::Protocol~6.49
+LWP::Protocol~6.51
 LWP::Protocol::PSGI~0.11
 List::MoreUtils~0.430
 List::MoreUtils::XS~0.430
@@ -101,10 +103,11 @@ Time::HiRes~1.9764
 Time::Local~1.30
 Time::Zone~2.24
 Try::Tiny~0.30
-Types::Serialiser~1.0
+Types::Serialiser~1.01
 UNIVERSAL::require~0.18
 URI~5.05
 URI::Escape~5.05
+URI::URL~5.05
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
