@@ -2,6 +2,7 @@ Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.25
+AnyEvent::Util
 Apache::LogFormat::Compiler~0.36
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -9,6 +10,7 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.08
 Class::Inspector~1.36
@@ -50,7 +52,7 @@ HTTP::Message~6.33
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request~6.33
+HTTP::Request::Common~6.33
 HTTP::Tiny~0.076
 Hash::MultiValue~0.16
 IO::FDPass~1.3
@@ -60,13 +62,14 @@ IO::Socket::IP~0.41
 JSON::MaybeXS~1.004003
 JSON::PP~4.06
 JSON::XS~4.03
+LWP~6.55
 LWP::MediaTypes~6.04
 LWP::Protocol~6.55
 LWP::Protocol::PSGI~0.11
 List::MoreUtils~0.430
 List::MoreUtils::XS~0.430
 MIME::Base64~3.16
-Math::BigInt~1.999818
+Math::BigInt~1.999819
 Module::Build~0.4231
 Module::Build::Tiny~0.039
 Net::HTTP~6.21
@@ -80,7 +83,6 @@ Scalar::Util~1.56
 Socket~2.032
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
-TAP::Harness~3.42
 TAP::Harness::Env~3.42
 Term::ANSIColor~5.01
 Test::Deep~1.130
