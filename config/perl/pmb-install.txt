@@ -2,7 +2,6 @@ Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.25
-AnyEvent::Util
 Apache::LogFormat::Compiler~0.36
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -10,7 +9,6 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
-Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.09
 Class::Inspector~1.36
@@ -40,14 +38,13 @@ File::Temp~0.2311
 Filesys::Notify::Simple~0.14
 Filter::Util::Call~1.60
 Guard~1.023
-HTML::Entities~3.76
+HTML::HeadParser~3.76
 HTML::Tagset~3.20
 HTTP::Cookies~6.10
 HTTP::Date~6.05
 HTTP::Entity::Parser~0.25
 HTTP::Headers~6.33
 HTTP::Headers::Fast~0.22
-HTTP::Headers::Util~6.33
 HTTP::Message~6.33
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
@@ -61,7 +58,6 @@ IO::Socket::IP~0.41
 JSON::MaybeXS~1.004003
 JSON::PP~4.06
 JSON::XS~4.03
-LWP~6.56
 LWP::MediaTypes~6.04
 LWP::Protocol~6.56
 LWP::Protocol::PSGI~0.11
@@ -83,7 +79,6 @@ Scalar::Util~1.56
 Socket~2.032
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
-TAP::Harness~3.42
 TAP::Harness::Env~3.42
 Term::ANSIColor~5.01
 Test::Deep~1.130
