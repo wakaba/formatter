@@ -2,6 +2,7 @@ Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.31
 AnyEvent::HTTP~2.25
+AnyEvent::Handle
 Apache::LogFormat::Compiler~0.36
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -9,6 +10,7 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.09
 Class::Inspector~1.36
@@ -26,9 +28,6 @@ Exception::Class~1.45
 Exporter~5.74
 Exporter::Lite~0.08
 Exporter::Tiny~1.002002
-ExtUtils::Config~0.008
-ExtUtils::Helpers~0.026
-ExtUtils::InstallPaths~0.012
 ExtUtils::MakeMaker~7.62
 File::Listing~6.14
 File::ShareDir~1.118
@@ -48,8 +47,6 @@ HTTP::Message~6.33
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Response~6.33
-HTTP::Server::PSGI
 HTTP::Tiny~0.078
 Hash::MultiValue~0.16
 IO::FDPass~1.3
@@ -59,15 +56,14 @@ IO::Socket::IP~0.41
 JSON::MaybeXS~1.004003
 JSON::PP~4.06
 JSON::XS~4.03
+LWP~6.57
 LWP::MediaTypes~6.04
-LWP::Protocol~6.57
 LWP::Protocol::PSGI~0.11
 List::MoreUtils~0.430
 List::MoreUtils::XS~0.430
 MIME::Base64~3.16
 Math::BigInt~1.999824
 Module::Build~0.4231
-Module::Build::Tiny~0.039
 Net::HTTP~6.21
 Net::SSLeay~1.90
 POSIX::strftime::Compiler~0.44
@@ -79,7 +75,6 @@ Scalar::Util~1.59
 Socket~2.032
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
-TAP::Harness::Env~3.42
 Term::ANSIColor~5.01
 Test::Deep~1.130
 Test::Differences~0.68
@@ -100,7 +95,7 @@ Time::Zone~2.24
 Try::Tiny~0.30
 Types::Serialiser~1.01
 UNIVERSAL::require~0.19
-URI~5.09
+URI::Escape~5.09
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
