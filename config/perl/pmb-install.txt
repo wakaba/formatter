@@ -39,6 +39,7 @@ File::Temp~0.2311
 Filesys::Notify::Simple~0.14
 Filter::Util::Call~1.60
 Guard~1.023
+HTML::Entities~3.76
 HTML::HeadParser~3.76
 HTML::Parser~3.76
 HTML::Tagset~3.20
@@ -81,9 +82,9 @@ Scalar::Util~1.61
 Socket~2.032
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
+TAP::Harness~3.42
 TAP::Harness::Env~3.42
 Term::ANSIColor~5.01
-Test::Builder~1.302188
 Test::Deep~1.130
 Test::Differences~0.69
 Test::Exception~0.43
@@ -104,7 +105,7 @@ Try::Tiny~0.31
 Types::Serialiser~1.01
 UNIVERSAL::require~0.19
 URI~5.10
-URI::Escape~5.10
+URI::URL~5.10
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
