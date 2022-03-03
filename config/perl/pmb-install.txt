@@ -2,6 +2,7 @@ Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.32
 AnyEvent::HTTP~2.25
+AnyEvent::Handle
 Apache::LogFormat::Compiler~0.36
 CPAN::Meta~2.150010
 CPAN::Meta::YAML~0.018
@@ -9,6 +10,7 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
+Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.09
 Class::Inspector~1.36
@@ -24,7 +26,7 @@ Encode~3.16
 Encode::Locale~1.05
 Exception::Class~1.45
 Exporter~5.74
-Exporter::Lite~0.08
+Exporter::Lite~0.09
 Exporter::Tiny~1.002002
 ExtUtils::Config~0.008
 ExtUtils::Helpers~0.026
@@ -38,7 +40,8 @@ File::Temp~0.2311
 Filesys::Notify::Simple~0.14
 Filter::Util::Call~1.60
 Guard~1.023
-HTML::Entities~3.76
+HTML::HeadParser~3.76
+HTML::Parser~3.76
 HTML::Tagset~3.20
 HTTP::Cookies~6.10
 HTTP::Date~6.05
@@ -49,6 +52,7 @@ HTTP::Message~6.36
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
+HTTP::Request~6.36
 HTTP::Tiny~0.080
 Hash::MultiValue~0.16
 IO::FDPass~1.3
@@ -60,6 +64,7 @@ JSON::PP~4.07
 JSON::XS~4.03
 LWP~6.61
 LWP::MediaTypes~6.04
+LWP::Protocol~6.61
 LWP::Protocol::PSGI~0.11
 List::MoreUtils~0.430
 List::MoreUtils::XS~0.430
@@ -103,7 +108,6 @@ Types::Serialiser~1.01
 UNIVERSAL::require~0.19
 URI~5.10
 URI::Escape~5.10
-URI::URL~5.10
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
