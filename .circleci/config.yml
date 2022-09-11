@@ -16,6 +16,11 @@
             },
             {
                "run" : {
+                  "command" : "make deps-circleci"
+               }
+            },
+            {
+               "run" : {
                   "command" : "docker info"
                }
             },
@@ -281,7 +286,7 @@
          "triggers" : [
             {
                "schedule" : {
-                  "cron" : "18 14 * * *",
+                  "cron" : "7 15 * * *",
                   "filters" : {
                      "branches" : {
                         "only" : [

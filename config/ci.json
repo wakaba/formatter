@@ -1,6 +1,9 @@
 {
   "circleci": {
     "pmbp": 1,
+    "build": [
+      "make deps-circleci"
+    ],
     "docker-build": "quay.io/wakaba/formatter",
     "merger": 1,
     "gaa": 1
