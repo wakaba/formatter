@@ -4,6 +4,7 @@
     "build": [
       "make deps-circleci"
     ],
+    "build_generated_pmbp": true,
     "docker-build": "quay.io/wakaba/formatter",
     "merger": 1,
     "gaa": 1
