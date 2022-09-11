@@ -23,6 +23,8 @@ endif
 
 deps-docker: pmbp-install
 
+deps-circleci: git-submodules
+
 git-submodules:
 	$(GIT) submodule update --init
 
