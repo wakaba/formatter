@@ -44,12 +44,12 @@ HTTP::Cookies~6.10
 HTTP::Date~6.05
 HTTP::Entity::Parser~0.25
 HTTP::Headers::Fast~0.22
+HTTP::Headers::Util~6.37
 HTTP::Message~6.37
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
 HTTP::Server::PSGI
-HTTP::Status~6.37
 Hash::MultiValue~0.16
 IO::FDPass~1.3
 IO::HTML~1.004
