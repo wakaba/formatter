@@ -53,7 +53,7 @@ return sub {
       $app->http->set_response_header ('access-control-allow-origin' => $origin);
       my $input_ref = $app->http->request_body_as_ref;
       my $parser = Web::URL::Parser->new;
-      $app->http->send_response_body_as_text ($parser->text_to_autolinked_html ($$input_ref));
+      $app->http->send_response_body_as_text ($parser->text_to_autolinked_html (decode_web_utf8 $$input_ref));
       return $app->http->close_response_body;
     } else {
       return $app->throw_error (404);
@@ -63,7 +63,7 @@ return sub {
 
 =head1 LICENSE
 
-Copyright 2017-2019 Wakaba <wakaba@suikawiki.org>.
+Copyright 2017-2022 Wakaba <wakaba@suikawiki.org>.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as

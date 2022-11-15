@@ -24,6 +24,7 @@ for (
   ["[https://twitter.com/bukkenfan/status/836562615081947136:embed]", qq{[<a href="https://twitter.com/bukkenfan/status/836562615081947136:embed" class=url-link>https://twitter.com/bukkenfan/status/836562615081947136:embed</a>]}],
   [q{https://foo.bar/test:detail}, qq{<a href="https://foo.bar/test:detail" class=url-link>https://foo.bar/test:detail</a>}],
   [q{[tex:a^b + c < 1]}, qq{[tex:a^b + c &lt; 1]}],
+  [qq{[tex:a^b + c < \x{4e00}!]}, qq{[tex:a^b + c &lt; \x{4e00}!]}],
 ) {
   my ($input, $expected, %args) = @$_;
   Test {
@@ -78,7 +79,7 @@ RUN;
 
 =head1 LICENSE
 
-Copyright 2017-2019 Wakaba <wakaba@suikawiki.org>.
+Copyright 2017-2022 Wakaba <wakaba@suikawiki.org>.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
