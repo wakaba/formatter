@@ -8,7 +8,6 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
-Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.09
 Class::Inspector~1.36
@@ -51,6 +50,7 @@ HTTP::Message~6.44
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
+HTTP::Response~6.44
 HTTP::Server::PSGI
 Hash::MultiValue~0.16
 IO::FDPass~1.3
