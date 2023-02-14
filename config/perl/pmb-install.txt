@@ -2,7 +2,6 @@ Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.32
 AnyEvent::HTTP~2.25
-AnyEvent::Util
 Apache::LogFormat::Compiler~0.36
 Canary::Stability~2013
 Capture::Tiny~0.48
@@ -47,7 +46,6 @@ HTTP::Date~6.05
 HTTP::Entity::Parser~0.25
 HTTP::Headers~6.44
 HTTP::Headers::Fast~0.22
-HTTP::Headers::Util~6.44
 HTTP::Message~6.44
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
@@ -58,6 +56,7 @@ IO::HTML~1.004
 IO::Handle~1.51
 JSON::MaybeXS~1.004004
 JSON::XS~4.03
+LWP~6.67
 LWP::MediaTypes~6.04
 LWP::Protocol~6.67
 LWP::Protocol::PSGI~0.11
@@ -72,6 +71,7 @@ Net::SSLeay~1.92
 POSIX::strftime::Compiler~0.44
 Path::Class~0.37
 Path::Tiny~0.144
+Plack::Request~1.0050
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.63
@@ -98,7 +98,7 @@ Try::Tiny~0.31
 Types::Serialiser~1.01
 UNIVERSAL::require~0.19
 URI~5.17
-URI::Escape~5.17
+URI::URL~5.17
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
