@@ -26,9 +26,6 @@ Exception::Class~1.45
 Exporter~5.77
 Exporter::Lite~0.09
 Exporter::Tiny~1.006000
-ExtUtils::Config~0.008
-ExtUtils::Helpers~0.026
-ExtUtils::InstallPaths~0.012
 ExtUtils::MakeMaker~7.68
 File::Listing~6.15
 File::ShareDir~1.118
@@ -50,8 +47,6 @@ HTTP::Message~6.44
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.44
-HTTP::Server::PSGI
 Hash::MultiValue~0.16
 IO::FDPass~1.3
 IO::HTML~1.004
@@ -66,7 +61,6 @@ List::MoreUtils::XS~0.430
 MIME::Base64~3.16
 Math::BigInt~1.999837
 Module::Build~0.4232
-Module::Build::Tiny~0.039
 Net::HTTP~6.22
 Net::SSLeay~1.92
 POSIX::strftime::Compiler~0.44
