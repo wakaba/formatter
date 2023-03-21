@@ -2,7 +2,6 @@ Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.32
 AnyEvent::HTTP~2.25
-AnyEvent::Util
 Apache::LogFormat::Compiler~0.36
 Canary::Stability~2013
 Capture::Tiny~0.48
@@ -26,6 +25,9 @@ Exception::Class~1.45
 Exporter~5.77
 Exporter::Lite~0.09
 Exporter::Tiny~1.006000
+ExtUtils::Config~0.008
+ExtUtils::Helpers~0.026
+ExtUtils::InstallPaths~0.012
 ExtUtils::MakeMaker~7.68
 File::Listing~6.15
 File::ShareDir~1.118
@@ -36,12 +38,10 @@ Filesys::Notify::Simple~0.14
 Filter::Util::Call~1.64
 Guard~1.023
 HTML::Entities~3.81
-HTML::HeadParser~3.81
 HTML::Tagset~3.20
 HTTP::Cookies~6.10
 HTTP::Date~6.05
 HTTP::Entity::Parser~0.25
-HTTP::Headers~6.44
 HTTP::Headers::Fast~0.22
 HTTP::Message~6.44
 HTTP::Message::PSGI
@@ -61,11 +61,13 @@ List::MoreUtils::XS~0.430
 MIME::Base64~3.16
 Math::BigInt~1.999837
 Module::Build~0.4232
+Module::Build::Tiny~0.039
 Net::HTTP~6.22
 Net::SSLeay~1.92
 POSIX::strftime::Compiler~0.44
 Path::Class~0.37
 Path::Tiny~0.144
+Plack::Request~1.0050
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.63
@@ -73,11 +75,11 @@ Socket~2.036
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 Term::ANSIColor~5.01
+Test::Builder~1.302194
 Test::Deep~1.204
 Test::Differences~0.69
 Test::Exception~0.43
 Test::Fatal~0.017
-Test::More~1.302194
 Test::Most~0.38
 Test::Name::FromLine~0.13
 Test::SharedFork~0.35
