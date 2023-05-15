@@ -7,7 +7,6 @@ Canary::Stability~2013
 Capture::Tiny~0.48
 Carp~1.50
 Class::Accessor~0.51
-Class::Accessor::Fast~0.51
 Class::Accessor::Lvalue::Fast
 Class::Data::Inheritable~0.09
 Class::Inspector~1.36
@@ -71,6 +70,7 @@ Net::SSLeay~1.92
 POSIX::strftime::Compiler~0.44
 Path::Class~0.37
 Path::Tiny~0.144
+Plack::Request~1.0050
 Proc::FastSpawn~1.2
 Regexp::Assemble~0.38
 Scalar::Util~1.63
@@ -78,11 +78,11 @@ Socket~2.036
 Stream::Buffered~0.03
 Sub::Uplevel~0.2800
 Term::ANSIColor~5.01
-Test::Builder~1.302195
 Test::Deep~1.204
 Test::Differences~0.69
 Test::Exception~0.43
 Test::Fatal~0.017
+Test::More~1.302195
 Test::Most~0.38
 Test::Name::FromLine~0.13
 Test::SharedFork~0.35
