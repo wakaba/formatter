@@ -2,7 +2,7 @@ Algorithm::Diff~1.201
 AnyEvent~7.17
 AnyEvent::Fork~1.32
 AnyEvent::HTTP~2.25
-AnyEvent::Util
+AnyEvent::Socket
 Apache::LogFormat::Compiler~0.36
 Canary::Stability~2013
 Capture::Tiny~0.48
@@ -40,6 +40,8 @@ Filesys::Notify::Simple~0.14
 Filter::Util::Call~1.64
 Guard~1.023
 HTML::Entities~3.81
+HTML::HeadParser~3.81
+HTML::Parser~3.81
 HTML::Tagset~3.20
 HTTP::CookieJar::LWP~0.014
 HTTP::Cookies~6.10
@@ -51,15 +53,14 @@ HTTP::Message~6.44
 HTTP::Message::PSGI
 HTTP::MultiPartParser~0.02
 HTTP::Negotiate~6.01
-HTTP::Request::Common~6.44
-HTTP::Server::PSGI
+HTTP::Request~6.44
+HTTP::Status~6.44
 Hash::MultiValue~0.16
 IO::FDPass~1.3
 IO::HTML~1.004
 IO::Handle~1.51
 JSON::MaybeXS~1.004005
 JSON::XS~4.03
-LWP~6.72
 LWP::MediaTypes~6.04
 LWP::Protocol~6.72
 LWP::Protocol::PSGI~0.11
@@ -100,7 +101,7 @@ Try::Tiny~0.31
 Types::Serialiser~1.01
 UNIVERSAL::require~0.19
 URI~5.19
-URI::Escape~5.19
+URI::URL~5.19
 WWW::Form::UrlEncoded~0.26
 WWW::RobotRules~6.02
 Want~0.29
